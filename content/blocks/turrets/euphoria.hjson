@@ -1,0 +1,32 @@
+type: PowerTurret
+size: 4
+health: 824
+range: 160
+rotateSpeed: 3.8
+reloadTime: 38
+shots: 1
+powerUse: 12
+recoilAmount: 2
+shootSound: laser
+shootType: {
+   type: BasicBulletType
+   height: 6
+   width: 4
+   weaveScale: 360
+   weaveMag: 20
+   homingPower: 10
+   pierce: true
+   pierceBuilding: true
+   lifetime: 520
+   damage: 74
+   trailColor: FF9ECF
+   trailLength: 4
+}
+category: turret
+requirements: [
+   copper/520
+   lead/450
+   graphite/250
+   silicon/105
+   thorium/200
+]
