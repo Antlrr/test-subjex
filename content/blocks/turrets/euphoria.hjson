@@ -1,9 +1,9 @@
 type: PowerTurret
 size: 4
 health: 824
-range: 120
+range: 170
 rotateSpeed: 3.8
-reloadTime: 82
+reloadTime: 124
 shots: 1
 powerUse: 12
 recoilAmount: 2
@@ -17,10 +17,11 @@ shootType: {
    fragBullets: 6
    speed: 1
    lifetime: 120
+   damage: 74
    fragBullet: {
       type: BasicBulletType
-      height: 6
-      width: 4
+      height: 7
+      width: 5
       speed: 2.5
       weaveScale: 360
       weaveMag: 10
@@ -28,7 +29,7 @@ shootType: {
       pierce: true
       pierceBuilding: true
       lifetime: 520
-      damage: 74
+      damage: 36
       trailColor: FF9ECF
       trailLength: 4
    }
