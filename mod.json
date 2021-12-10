@@ -1,0 +1,9 @@
+{
+   "name": "subjex",
+   "displayName": "Test Subjex", 
+   "author": "Antlrr",
+   "description": "stuff goes here",
+   "version": "1.0",
+   "minGameVersion": "130",
+   "hidden": "false"
+}
