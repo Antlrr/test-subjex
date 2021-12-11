@@ -11,7 +11,7 @@ shootSound: laser
 shootType: {
    type: BasicBulletType
    sprite: missile-large
-   width: 10
+   width: 6
    height: 14
    trailColor: FF9ECF
    trailWidth: 6
@@ -24,7 +24,7 @@ shootType: {
    damage: 74
    fragBullet: {
       type: BasicBulletType
-      sprite: missile
+      sprite: circle-bullet
       backColor: FF9ECF
       frontColor: FF9ECF
       height: 7
