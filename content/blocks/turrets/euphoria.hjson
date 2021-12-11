@@ -27,8 +27,8 @@ shootType: {
       sprite: circle-bullet
       backColor: FF9ECF
       frontColor: FF9ECF
-      height: 7
-      width: 6.5
+      height: 4
+      width: 4
       speed: 4
       weaveScale: 300
       weaveMag: 10
