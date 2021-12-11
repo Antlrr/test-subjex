@@ -13,6 +13,7 @@ shootType: {
    sprite: missile-large
    width: 12
    height: 14
+   shrinkY: 0
    trailColor: FF9ECF
    trailWidth: 4
    trailLength: 12
