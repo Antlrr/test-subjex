@@ -10,12 +10,11 @@ recoilAmount: 2
 shootSound: laser
 shootType: {
    type: BasicBulletType
-   sprite: mine-bullet
-   shrinkX: 0.2
-   shrinkY: 0.2
-   width: 18
+   sprite: missile-large
+   width: 13
    height: 18
-   spin: 1
+   trailColor: FF9ECF
+   trailLength: 5
    backColor: FF9ECF
    frontColor: FF9ECF
    fragBullets: 8
@@ -24,6 +23,7 @@ shootType: {
    damage: 74
    fragBullet: {
       type: BasicBulletType
+      sprite: missile
       backColor: FF9ECF
       frontColor: FF9ECF
       height: 7
