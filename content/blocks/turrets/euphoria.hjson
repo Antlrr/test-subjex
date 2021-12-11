@@ -1,7 +1,7 @@
 type: PowerTurret
 size: 4
 health: 824
-range: 170
+range: 230
 rotateSpeed: 3.8
 reloadTime: 124
 shots: 1
@@ -10,18 +10,23 @@ recoilAmount: 2
 shootSound: laser
 shootType: {
    type: BasicBulletType
+   sprite: mine-bullet
+   shrinkX: 0.2
+   shrinkY: 0.2
    width: 12
    height: 18
    backColor: FF9ECF
    frontColor: FF9ECF
    fragBullets: 8
    speed: 1
-   lifetime: 120
+   lifetime: 210
    damage: 74
    fragBullet: {
       type: BasicBulletType
+      backColor: FF9ECF
+      frontColor: FF9ECF
       height: 7
-      width: 6
+      width: 6.5
       speed: 4
       weaveScale: 300
       weaveMag: 10
