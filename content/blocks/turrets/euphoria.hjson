@@ -11,10 +11,10 @@ shootSound: laser
 shootType: {
    type: BasicBulletType
    sprite: missile-large
-   width: 6
+   width: 12
    height: 14
    trailColor: FF9ECF
-   trailWidth: 6
+   trailWidth: 4
    trailLength: 12
    backColor: FF9ECF
    frontColor: FF9ECF
