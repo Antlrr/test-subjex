@@ -13,8 +13,9 @@ shootType: {
    sprite: mine-bullet
    shrinkX: 0.2
    shrinkY: 0.2
-   width: 12
+   width: 18
    height: 18
+   spin: 1
    backColor: FF9ECF
    frontColor: FF9ECF
    fragBullets: 8
