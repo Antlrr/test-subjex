@@ -7,13 +7,12 @@ size: 2
 ammoTypes: {
    copper: {
       type: BasicBulletType
-      }
+   }
    lead: {
       type: BasicBulletType
-      }
+   }
    graphite: {
       type: BasicBulletType
-      }
    }
 }
 category: turret
