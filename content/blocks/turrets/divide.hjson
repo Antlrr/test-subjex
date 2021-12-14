@@ -8,7 +8,7 @@ ammoTypes: {
       type: BulletType
       lifetime: 2
    }
-   spore: {
+   spore-pod: {
       type: BulletType
    }
 }
