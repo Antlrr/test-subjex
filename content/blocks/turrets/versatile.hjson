@@ -7,12 +7,22 @@ size: 2
 ammoTypes: {
    copper: {
       type: BasicBulletType
+      speed: 2.5
+      width: 5
+      length: 4
    }
    lead: {
       type: BasicBulletType
+      speed: 3
+      width: 6
+      length: 4
    }
    graphite: {
       type: BasicBulletType
+      sprite: circle-bullet
+      trailEffect: artilleryTrail
+      width: 5
+      length: 5
    }
 }
 category: turret
