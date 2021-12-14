@@ -2,11 +2,12 @@ type: ItemTurret
 health: 100
 range: 1
 reloadTime: 30
+recoilAmount: -3
 ammoTypes: {
    coal: {
       type: BulletType
       lifetime: 2
-      recoil: -1
+      speed: 3
    }
    spore-pod: {
       type: BulletType
