@@ -8,6 +8,7 @@ ammoTypes: {
       type: BulletType
       lifetime: 2
       speed: 3
+      damage: 3
    }
    spore-pod: {
       type: BulletType
