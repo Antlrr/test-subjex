@@ -1,0 +1,21 @@
+type: ItemTurret
+health: 100
+range: 1
+reloadTime: 30
+ammoUseEffect: casing1
+ammoTypes: {
+   copper: {
+      type: BasicBulletType
+      }
+   silicon: {
+      type: BasicBulletType
+      }
+   pyratite: {
+      type: BasicBulletType
+      }
+   }
+}
+category: turret
+requirements: [
+  copper/10
+]
