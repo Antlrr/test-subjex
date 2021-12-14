@@ -40,6 +40,9 @@ shootType: {
       damage: 52
       trailColor: FF9ECF
       trailLength: 4
+      shrinkY: 0
+      shrinkX: 0
+      hitEffect: none
    }
 }
 category: turret
