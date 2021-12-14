@@ -1,7 +1,7 @@
 type: ItemTurret
 health: 100
-range: 1
-reloadTime: 4
+range: 9
+reloadTime: 8
 recoilAmount: -3
 ammoTypes: {
    coal: {
