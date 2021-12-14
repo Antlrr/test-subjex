@@ -1,6 +1,6 @@
 type: PowerTurret
 size: 4
-health: 824
+health: 2548
 range: 230
 rotateSpeed: 3.8
 reloadTime: 124
