@@ -3,13 +3,16 @@ health: 100
 range: 30
 reloadTime: 8
 recoilAmount: -0.1
+shootEffect: none
+smokeEffect: none
+shootSound: sap
 ammoTypes: {
    spore-pod: {
       type: SapBulletType
       width: 0.5
       length: 28
       sapStrength: 4
-      color: 665c9f
+      color: bf92f9
    }
 }
 category: turret
