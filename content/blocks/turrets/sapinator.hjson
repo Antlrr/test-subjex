@@ -1,0 +1,20 @@
+type: ItemTurret
+health: 100
+range: 30
+reloadTime: 8
+recoilAmount: -0.1
+ammoTypes: {
+   spore-pod: {
+      type: SapBulletType
+      width: 0.5
+      length: 28
+      sapStrength: 4
+      color: 665c9f
+   }
+}
+category: turret
+requirements: [
+   copper/26
+   lead/20
+   graphite/18
+]
