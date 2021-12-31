@@ -1,0 +1,372 @@
+name: Vertile
+type: ItemTurret
+description: "A multi-purpose turret."
+health: 2300
+rotateSpeed: 5
+category: turret
+size: 3
+liquidCapacity: 60
+itemCapacity: 18
+reloadTime: 92
+range: 260
+requirements:
+[
+    copper/35
+    lead/15
+]
+shootSound: missilelaunch
+recoilAmount: 3
+rotateSpeed: 15
+ammoTypes: {
+    copper: {
+        type: BasicBulletType
+        shrinkX: 0
+        shrinkY: 0
+        despawnSound: shootBig
+        speed: 1
+        drag: -0.05
+        lifetime: 53
+        height: 24
+        width: 16
+        damage: 80
+        backColor: D99D73
+        frontColor: D99D73
+        splashDamage: 86
+        splashDamageRadius: 68
+        trailChance: 1
+        trailEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: ParticleEffect
+              particles: 12
+              lifetime: 120
+              cone: 60
+              colorFrom: D99D73
+              colorTo: D99D7300
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              lifetime: 120
+              cone: 60
+              colorFrom: ffffff50
+              colorTo: ffffff50
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+           ]
+        }
+        despawnEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: WaveEffect
+              lifetime: 52
+              sizeFrom: 0
+              sizeTo: 83
+              colorFrom: D99D73
+              colorTo: B8705C00
+              }
+              {
+              type: ParticleEffect
+              lifetime: 183
+              interp: fastSlow
+              line: true
+              strokeFrom: 0
+              strokeTo: 2
+              lenFrom: 4
+              lenTo: 0
+              colorFrom: D99D73
+              colorTo: B8705C00
+              }
+              {
+              type: ParticleEffect
+              lifetime: 183
+              interp: pow10Out
+              sizeFrom: 6
+              sizeTo: 0
+              colorFrom: D99D7320
+              colorTo: D99D7320
+              }
+           ]
+        }
+    }
+    thorium: {
+        type: BasicBulletType
+        shrinkX: 0.1
+        shrinkY: 0
+        despawnSound: explosionbig
+        speed: 1
+        drag: -0.05
+        lifetime: 53
+        height: 24
+        width: 16
+        damage: 104
+        backColor: f9a3c7
+        frontColor: f9a3c7
+        splashDamage: 86
+        splashDamageRadius: 182
+        trailChance: 1
+        trailEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: ParticleEffect
+              particles: 12
+              lifetime: 120
+              cone: 60
+              colorFrom: f9a3c7
+              colorTo: f9a3c700
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              lifetime: 120
+              cone: 60
+              colorFrom: f9a3c750
+              colorTo: f9a3c750
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+           ]
+        }
+        despawnEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: WaveEffect
+              lifetime: 52
+              sizeFrom: 0
+              sizeTo: 83
+              colorFrom: f9a3c7
+              colorTo: f9a3c700
+              }
+              {
+              type: ParticleEffect
+              particles: 8
+              sizeFrom: 16
+              sizeTo: 0
+              interp: fastSlow
+              length: 40
+              colorFrom: f9a3c760
+              colorTo: f9a3c760
+              }
+           ]
+        }
+     }
+    graphite: {
+        type: ArtilleryBulletType
+        despawnSound: artillery
+        speed: 1
+        lifetime: 120
+        height: 24
+        width: 16
+        damage: 104
+        backColor: 95ABD9
+        frontColor: 95ABD9
+        splashDamage: 86
+        splashDamageRadius: 182
+        trailChance: 1
+        trailEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: ParticleEffect
+              particles: 12
+              lifetime: 120
+              cone: 60
+              colorFrom: 95ABD9
+              colorTo: 95ABD900
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              lifetime: 120
+              cone: 60
+              colorFrom: 95ABD950
+              colorTo: 95ABD950
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+           ]
+        }
+        despawnEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: WaveEffect
+              lifetime: 52
+              sizeFrom: 0
+              sizeTo: 83
+              colorFrom: 95ABD9
+              colorTo: 95ABD900
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              sizeFrom: 16
+              sizeTo: 0
+              interp: fastSlow
+              length: 40
+              colorFrom: 95ABD950
+              colorTo: 95ABD950
+              }
+           ]
+        }
+     }
+     blast-compound: {
+        type: MissileBulletType
+        homingPower: 0.2
+        weaveScale: 6
+        weaveMag: 6
+        despawnSound: missile
+        drag: -0.05
+        speed: 1
+        lifetime: 53
+        height: 24
+        width: 16
+        damage: 104
+        backColor: FF795E
+        frontColor: FF795E
+        splashDamage: 86
+        splashDamageRadius: 182
+        trailChance: 1
+        trailLength: 26
+        trailWidth: 4
+        trailColor: FF795E
+        trailEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: ParticleEffect
+              particles: 12
+              lifetime: 120
+              cone: 60
+              colorFrom: FF795E
+              colorTo: FF795E00
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              lifetime: 120
+              cone: 60
+              colorFrom: FF795E50
+              colorTo: FF795E50
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+           ]
+        }
+        despawnEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: WaveEffect
+              lifetime: 52
+              sizeFrom: 0
+              sizeTo: 83
+              colorFrom: FF795E
+              colorTo: FF795E00
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              sizeFrom: 16
+              sizeTo: 0
+              interp: fastSlow
+              length: 40
+              colorFrom: FF795E60
+              colorTo: FF795E60
+              }
+           ]
+        }
+     }
+     surge-alloy: {
+        type: BasicBulletType
+        despawnSound: spark
+        drag: -0.05
+        speed: 1
+        lifetime: 53
+        height: 24
+        width: 16
+        damage: 156
+        backColor: FEFFAE
+        frontColor: FEFFAE
+        splashDamage: 86
+        splashDamageRadius: 182
+        trailChance: 1
+        trailEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: ParticleEffect
+              particles: 12
+              lifetime: 120
+              cone: 60
+              colorFrom: FEFFAE
+              colorTo: FEFFAE00
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              lifetime: 120
+              cone: 60
+              colorFrom: FEFFEA50
+              colorTo: FEFFEA50
+              sizeFrom: 3
+              sizeTo: 0
+              interp: pow10Out
+              }
+           ]
+        }
+        despawnEffect: {
+           type: MultiEffect
+           effects: [
+              {
+              type: WaveEffect
+              lifetime: 52
+              sizeFrom: 0
+              sizeTo: 83
+              colorFrom: FEFFAE
+              colorTo: FEFFAE00
+              }
+              {
+              type: ParticleEffect
+              particles: 6
+              sizeFrom: 16
+              sizeTo: 0
+              interp: fastSlow
+              length: 40
+              colorFrom: FEFFAE60
+              colorTo: FEFFAE60
+              }
+           ]
+        }
+        fragBullets: 5
+        fragBullet: {
+           type: LightningBulletType
+           lightningColor: FEFFAE
+           lightningLength: 12
+        }
+     }
+  }
