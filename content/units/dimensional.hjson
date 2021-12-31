@@ -1,0 +1,80 @@
+type: flying
+name: Dimensional
+description: Summons homing missiles.
+flying: true
+health: 340
+speed: 2
+drag: 0.1
+accel: 1
+lightRadius: 0
+faceTarget: false
+weapons: [
+   {
+   top: false
+   rotate: true
+   mirror: true
+   reload: 16
+   x: 14
+   y: 0
+   shootSound: missile
+   bullet: {
+      type: BasicBulletType
+      damage: 36
+      absorbable: false
+      weaveScale: 3
+      weaveMag: 6
+      homingPower: 0.1
+      trailColor: 97EAF0
+      trailLength: 5
+      trailWidth: 2.30
+      sprite: missile-large
+      backColor: 97EAF0
+      frontColor: 97EAF0
+      speed: 1.70
+      lifetime: 54
+      height: 8
+      width: 5
+      drag: -0.01
+      smokeEffect: none
+      shootEffect: {
+         type: MultiEffect
+         effects: [
+            {
+            type: ParticleEffect
+            lifetime: 42
+            length: 0
+            region: sus-portal-open
+            sizeFrom: 1
+            sizeTo: 5.80
+            colorFrom: 97EAF0
+            colorTo: 97EAF0
+            interp: pow10Out
+            }
+            {
+            type: ParticleEffect
+            lifetime: 40
+            region: circle
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: 97EAF0
+            colorTo: 97EAF005
+            }
+            {
+            type: ParticleEffect
+            line: true
+            lenFrom: 2
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 0.50
+            lifetime: 40
+            region: circle
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: 97EAF0
+            colorTo: 97EAF005
+            }
+            ]
+         }
+      }
+   }
+]
