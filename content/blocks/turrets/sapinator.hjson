@@ -1,5 +1,7 @@
 type: ItemTurret
-health: 100
+name: Sapinator
+description: "A weak turret, but can sap."
+health: 120
 range: 30
 reloadTime: 8
 recoilAmount: -0.1
@@ -11,7 +13,7 @@ ammoTypes: {
       type: SapBulletType
       width: 0.5
       length: 28
-      sapStrength: 4
+      sapStrength: 5
       color: bf92f9
    }
 }
